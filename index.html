@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet"/>
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <div style="padding: 1rem;display: block;">NIM: 230401010297</div>
+                <ul class="navbar">
+                    <li><button type="button" class="btn-nav" onclick="goTo('homex')">Home</button></li>
+                    <li><button type="button" class="btn-nav" onclick="goTo('aboutx')">About</button></li>
+                    <li><button type="button" class="btn-nav" onclick="goTo('projectx')">Project</button></li>
+                    <li><button type="button" class="btn-nav" onclick="goTo('contactx')">Contact</button></li>
+                </ul>
+            </nav>
+            <div class="home" id="homex">
+                <div class="text"> 
+                <h1>Hi! I'm <br> Muhammad Rafael Mulya Lesmana</h1>
+                    <p>a Junior Web Programmer</p> 
+                    <button class="begin" type="button" onclick="goTo('aboutx')">Begin</button>
+                </div>
+                <div class="home-image">
+                    <div class="kotak1"></div>
+                    <div class="kotak2"></div>
+                    <div class="kotak3"></div>
+                </div>
+            </div>
+
+            <div class="about" id="aboutx">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                <div class="text">
+                    <h1>About Me</h1>
+                    <p>Lahir di Bogor 21 Mei 2005, dan bertempat tinggal di Cigombong Kabupaten Bogor. 
+                        Lulusan tahun 2023 dari SMK Wikrama Kota Bogor Jurusan Rekayasa Perangkat Lunak</p>
+                    <p>Saat Ini: Junior Web Programmer di PT CDC Global Informatika</p>
+                    <h2>Skill</h2>
+                    <ul class="skill">
+                        <li>PHP</li>
+                        <li>CAKE PHP</li>
+                        <li>JavaScript</li>
+                        <li>Laravel</li>
+                        <li>Tailwinds</li>
+                        <li>Node JS</li>
+                    </ul>
+                </div>
+                <div class="foto">
+                    <img src="Vector.png" alt="">
+                </div>
+            </div>
+            
+            <div class="project" id="projectx">
+                <h1>Project</h1>
+                <div class="grid-container">
+                    <div class="card">
+                        <img src="./pengaduan.jpeg"  style="padding-top: 2rem;width: 17rem;height: 10rem;" alt="">
+                        <h3>Pengaduan Masyarakat</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./ahass.jpg"  style="padding-top: 2rem;width: 17rem;height: 10rem;" alt="">
+                        <h3>Penjualan & Bengkel Honda <br>Wilayah Jakarta & Tangerang</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./pw.jpeg"  style="padding-top: 2rem;width: 17rem;height: 10rem;" alt="">
+                        <h3>Inventaris & Pengadaan Barang</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./manufaktur.jpg"  style="padding-top: 2rem;width: 17rem;height: 10rem;" alt="">
+                        <h3>Manufaktur</h3>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="contact" id="contactx">
+                <h1>Contacts</h1>
+                <div class="form">
+                    <form action="" method="POST" autocomplete="off">
+                        <label for="nama">Nama Lengkap</label>
+                            <input type="text" name="nama">
+                        <label for="email">Email</label>
+                            <input type="email" name="email" id="">
+                        <label for="ket">Pesan</label>
+                            <textarea name="deskripsi" id="" cols="30" rows="5"></textarea>
+                        <div class="submit">
+                            <button class="btn-submit" type="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                &copy;Copyright 2024 | Muhammad Rafael Mulya Lesmana
+            </footer>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="index.js"></script>
+</html>
